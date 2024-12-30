@@ -1,18 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-        <title>Craigslist - Paris / LTRHD Replica</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <title>Craigslist - Paris / LTRHD Replica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-                integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<body>
+    <!-- Video container -->
+    <div class="video-container">
+        <video id="myVideo" width="100%" height="auto" autoplay loop muted>
+                <source src="file:///C:/Users/HP/Downloads/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </div>
 <body>
         <!-- Header section start here -->
         <header class="w-100 h-screen bg-no-repeat bg-cover relative" style="background-image: url('./img2.webp');">
@@ -90,6 +98,13 @@
                         </div>
                 </div>
         </header>
+        <script>
+                // JavaScript to unmute the video after user clicks anywhere on the page
+                document.body.addEventListener("click", function () {
+                    var video = document.getElementById("myVideo");
+                    video.muted = false; // Unmute the video
+                });
+            </script>
         <!-- Header section end here -->
 
         <!-- Body section start here -->
